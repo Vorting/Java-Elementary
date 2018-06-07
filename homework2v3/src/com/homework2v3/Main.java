@@ -31,7 +31,7 @@ public class Main {
 //            int value =list.get(COUNT/2);
 //             list.remove(100000/2);
 //            System.out.println("Value: " + value);
-//        }
+        }
          
         long timeDiff=System.currentTimeMillis()-time;
         double seconds = timeDiff/1000.0;
