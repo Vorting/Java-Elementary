@@ -39,6 +39,6 @@ public class Main {
          
         System.out.println(list);
         System.out.println(list.size());
-//      System.out.println(list.count()); // вот тут подсвечивает
+        System.out.println("№ of calls: " + list.count());
     }
 }
