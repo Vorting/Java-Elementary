@@ -58,6 +58,11 @@ public class IntLinkedList implements IntList {// implements это ключев
     @Override
     public void remove(int i) {
     }
+    
+    @Override
+    public int count() {
+        return count();
+    }
 
     @Override
     public int get(int index) {
