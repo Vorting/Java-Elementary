@@ -35,10 +35,10 @@ public class Main {
          
         long timeDiff=System.currentTimeMillis()-time;
         double seconds = timeDiff/1000.0;
-//        System.out.println("Time: "+ seconds);
+//      System.out.println("Time: "+ seconds);
          
         System.out.println(list);
         System.out.println(list.size());
-//          System.out.println(list.count()); // вот тут подсвечивает
+//      System.out.println(list.count()); // вот тут подсвечивает
     }
 }
