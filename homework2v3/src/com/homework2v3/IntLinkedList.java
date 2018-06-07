@@ -59,7 +59,6 @@ public class IntLinkedList implements IntList {// implements это ключев
     public void remove(int i) {
     }
     
-    @Override
     public int count() {
         return count();
     }
