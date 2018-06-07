@@ -7,5 +7,5 @@ public interface  IntList {
     int size ();
     void add(int element, int index);//метод который вставляет в середину
     void remove(int i);
-
+    int count();
 }
