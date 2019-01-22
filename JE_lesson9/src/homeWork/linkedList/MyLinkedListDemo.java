@@ -1,6 +1,4 @@
-package linkedList;
-
-import java.util.LinkedList;
+package homeWork.linkedList;
 
 public class MyLinkedListDemo {
 
@@ -21,8 +19,12 @@ public class MyLinkedListDemo {
         System.out.println(myLinkedList.get(1));
         System.out.println(myLinkedList.get(2));
 
+        System.out.println("Lets remove the element on index (1):");
         myLinkedList.remove(1);
         System.out.println(myLinkedList);
+        System.out.println("Nice, we just deleted " + "number 2" + "con index (1)");
+
+        System.out.println(myLinkedList.contains(1));
 
     }
 }

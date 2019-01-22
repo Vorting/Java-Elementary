@@ -1,4 +1,4 @@
-package com.arrayList;
+package homeWork.arrayList;
 
 /* добавление-add (E e), удаление-remove( Object o),
 проверка наличия- contains (Object o), получение колличества-size,

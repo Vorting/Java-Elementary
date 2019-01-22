@@ -1,4 +1,4 @@
-package linkedList;
+package homeWork.linkedList;
 
 public interface LinkedList<E> {
 
@@ -6,7 +6,7 @@ public interface LinkedList<E> {
 
     Object get(Object index);
 
-    void remove(E index);
+    void remove(int index);
 
     boolean contains(E e);
 

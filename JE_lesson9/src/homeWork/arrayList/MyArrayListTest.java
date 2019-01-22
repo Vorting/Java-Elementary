@@ -1,4 +1,4 @@
-package com.arrayList;
+package homeWork.arrayList;
 /* Задача. Реализовать свой класс ArrayList
  расширяющий интерфейс List (реализовать только основные методы, если будет время, то реализовать остальные)
  */
@@ -21,5 +21,7 @@ public class MyArrayListTest {
 
         System.out.println(myList.toString());
         System.out.println(myList.contains(2) );
+        System.out.println("Is my list empty? ");
+        System.out.println(myList.isEmpty());
     }
 }

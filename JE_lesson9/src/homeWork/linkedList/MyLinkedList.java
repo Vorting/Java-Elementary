@@ -1,4 +1,4 @@
-package linkedList;
+package homeWork.linkedList;
 
 
 import java.util.Arrays;
@@ -57,37 +57,45 @@ public class MyLinkedList<E> implements LinkedList<E> {
     }
 
     @Override
-    public void remove(E index) {
+    public void remove(int index) {
         if (index == 0) {
             head = head.getNext();
             size--;
             return;
         }
 
-        Integer currentIndex = 0;
+        int currentIndex = 0;
         Node tmp = head;
-
         while (tmp != null) {
-            if ((currentIndex == index - 1) {// fix that line
+            if (currentIndex == index - 1) {
                 tmp.setNext(tmp.getNext().getNext());
                 size--;
                 return;
-            } else{
+            } else {
                 tmp = tmp.getNext();
                 currentIndex++;
             }
         }
-
     }
 
     @Override
-    public boolean contains(E e) {
+    public boolean contains(E index) {
+        Integer currentIndex = 0;
+        Node tmp = head;
+//        while (tmp!=index) {
+        if (currentIndex.equals(index)) {
+            return true;
+        } else {
+            tmp = tmp.getNext();
+            currentIndex++;
+        }
+//        }
         return false;
     }
 
     @Override
     public int size() {
-        return 0;
+        return size;
     }
 
     @Override
