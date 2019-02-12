@@ -1,5 +1,7 @@
 package com.edition5.chapter5.tests.Queue;
 
+import com.edition5.chapter5.tests.QDemo.QDemo;
+
 /*
 Класс, реализующий очередь для хранения символов
  */
@@ -14,7 +16,7 @@ public class Queue {
         putloc = getloc = 0;
     }
 
-    void put(char ch) {
+    public void put(char ch) {
         if (putloc == q.length - 1) {
             System.out.println(" - Очередь заполнена");
             return;
@@ -24,7 +26,7 @@ public class Queue {
     }
 
     //Извлекаем символ из очереди
-    char get() {
+    public char get() {
         if (getloc == putloc) {
             System.out.println(" - Очередь пуста");
             return (char) 0;

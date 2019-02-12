@@ -8,9 +8,9 @@ public class FDemo {
     }
 
     //вызывается при утилизации обьекта
-    protected void finalize() {
-        System.out.println("Finalizing " + x);
-    }
+//    protected void finalize() {
+//        System.out.println("Finalizing " + x);
+//    }
 
 
     //формирует обьект, который тотчас уничтожается

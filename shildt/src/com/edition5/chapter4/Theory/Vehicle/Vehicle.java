@@ -2,11 +2,11 @@ package com.edition5.chapter4.Theory.Vehicle;
 
 public class Vehicle {
 
-    int passengers; //кол-во пассажиров
-    int fuelCap; // емкость топливного бака
-    int mpg; //потребление топлива в милях на галлон
+    public int passengers; //кол-во пассажиров
+    public int fuelCap; // емкость топливного бака
+    public int mpg; //потребление топлива в милях на галлон
 
-    Vehicle(int p, int f, int m) {
+    public Vehicle(int p, int f, int m) {
         passengers = p;
         fuelCap = f;
         mpg = m;
@@ -14,7 +14,7 @@ public class Vehicle {
     }
 
     // возвратить дальность действия транспортного средства
-    int range() {
+    public int range() {
         return fuelCap * mpg;
     }
 

@@ -1,5 +1,6 @@
 package com.edition5.chapter5.tests.QDemo;
 
+
 import com.edition5.chapter5.tests.Queue.Queue;
 
 public class QDemo {
@@ -15,8 +16,32 @@ public class QDemo {
 
         //помещаем буквенные символы в очередь biqQ
 
-        for (i=0;i<26; i++){
+        for (i = 0; i < 26; i++) {
+            bigQ.put((char) ('A' + i));
+        }
 
+        System.out.print("Отображаем  символы очереди bigQ: ");
+        for (i = 0; i < 26; i++) {
+            ch = bigQ.get();
+            if (ch != (char) 0) {
+                System.out.print(ch);
+            }
+            System.out.print(" ");
+        }
+        System.out.println("\nИспуользуем smallQ для генерации ошибок.");
+        for (i = 0; i < 5; i++) {
+            System.out.print("Попытка сохранения " + (char) ('Z' - i));
+            smallQ.put((char) ('Z' - i));
+            System.out.println();
+        }
+        System.out.print("");
+
+        System.out.print("Содержимое в smallQ: ");
+        for (i = 0; i < 5; i++) {
+            ch = smallQ.get();
+            if (ch!=(char)0){
+                System.out.print(ch);
+            }
         }
     }
 

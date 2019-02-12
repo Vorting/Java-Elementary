@@ -8,7 +8,7 @@ public class ArrayDemo {
 
         for (i = 0; i < sample.length; i++) {
             sample[i] = i;
-            System.out.println("Элемент [" + i + "]:" + "\t"+sample[i]);
+            System.out.println("Элемент [" + i + "]:" + "\t" + sample[i]);
         }
 
     }

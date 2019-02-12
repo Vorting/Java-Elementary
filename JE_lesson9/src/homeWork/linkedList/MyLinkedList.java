@@ -37,7 +37,7 @@ public class MyLinkedList<E> implements LinkedList<E> {
                 return tmp.getValue();
             } else {
                 tmp = tmp.getNext();
-                currentIndex++; //под вопросом
+                currentIndex++;
             }
         }
         throw new IllegalArgumentException();
@@ -79,17 +79,12 @@ public class MyLinkedList<E> implements LinkedList<E> {
     }
 
     @Override
-    public boolean contains(E index) {
-        Integer currentIndex = 0;
-        Node tmp = head;
-//        while (tmp!=index) {
-        if (currentIndex.equals(index)) {
-            return true;
-        } else {
-            tmp = tmp.getNext();
-            currentIndex++;
+    public boolean contains(E e) {
+        for (int i = 0; i < size; i++) {
+            if (get(i) == e) {
+                return true;
+            }
         }
-//        }
         return false;
     }
 
@@ -100,7 +95,7 @@ public class MyLinkedList<E> implements LinkedList<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size == 0;
     }
 
     @Override
