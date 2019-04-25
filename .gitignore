@@ -49,6 +49,13 @@ nbdist/
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea/**/misc.xml
+.idea/**/vcs.xml
+.idea/**/uiDesigner.xml
+.idea/**/modules.xml
+
+
+
 
 # Generated files
 .idea/**/contentModel.xml
