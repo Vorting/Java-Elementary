@@ -17,9 +17,9 @@ public abstract class Display {
     private static Graphics bufferGraphics;
     private static int clearColor;
 
-    //tmp
-    private static float delta = 0;
-    //tmp end
+//    //tmp
+//    private static float delta = 0;
+//    //tmp end
 
     public static void create(int width, int height, String title, int _clearColor) {
         if (created) {
@@ -55,8 +55,8 @@ public abstract class Display {
 
     public static void render() {
         bufferGraphics.setColor(new Color(0xff0000ff));
-        bufferGraphics.fillOval((int) (350 + (Math.sin(delta) * 200)), 250, 100, 100);
-        delta += 0.02f;
+        bufferGraphics.fillOval(350 , 250, 100, 100);
+    
     }
 
     public static void sawpBuffers() {
