@@ -10,9 +10,9 @@ public class FailSoftArray {
     /* Конструктору данного класса передается размер массива и значение, которое должен возврашать
     метод get() при обнаружении ошибки. */
 
-    public FailSoftArray(int size, int errVal) {
+    public FailSoftArray(int size, int errV) {
         a = new int[size];
-        errVal = errVal;
+        errVal = errV;
         length = size;
     }
 

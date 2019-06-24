@@ -16,7 +16,7 @@ public class FacotrialDemo {
         System.out.println("Fact using iterative method " + fac.FactI(5));
     }
 
-    public static class Factorial {
+    static class Factorial {
 
         int factR(int n) {
             int result;
