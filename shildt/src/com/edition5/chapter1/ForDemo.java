@@ -1,4 +1,4 @@
-package com.edition5.chapter2.Theory;
+package com.edition5.chapter1;
 
 public class ForDemo {
     public static void main(String[] args) {
