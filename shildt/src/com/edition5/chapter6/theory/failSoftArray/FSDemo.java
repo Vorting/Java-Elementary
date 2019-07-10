@@ -31,11 +31,11 @@ public class FSDemo {
         for (int i = 0; i < (fs.length) * 2; i++) {
             x = fs.getErrVal(i);
             if (x != -1) {
-                System.out.print(x + "");
+                System.out.print(x + " ");
             } else {
                 System.out.println("Index " + i + " out-of-bounds");
             }
-            System.out.print(",");
+            System.out.print("");
         }
     }
 }

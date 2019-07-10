@@ -8,6 +8,4 @@ public class Err {
         msg = m;
         severity = s;
     }
-
-
 }

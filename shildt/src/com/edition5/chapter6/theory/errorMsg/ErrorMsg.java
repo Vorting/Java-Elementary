@@ -1,7 +1,8 @@
 package com.edition5.chapter6.theory.errorMsg;
 
 public class ErrorMsg {
-    String[] msgs = {"Output Error",
+    String[] msgs = {
+            "Output Error",
             "Input Error",
             "Disk Full",
             "Index Out-of-Bounds Exception"

@@ -4,13 +4,12 @@ public class OverloadDemo {
 
     public static void main(String[] args) {
 
-
         Overload ob = new Overload();
         int resInt;
         double resDouble;
 
         ob.ovlDemo();
-        System.out.println(ob);
+        System.out.println();
 
         ob.ovlDemo(2);
         System.out.println();
