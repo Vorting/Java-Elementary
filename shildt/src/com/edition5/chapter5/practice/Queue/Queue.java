@@ -4,16 +4,12 @@ package com.edition5.chapter5.practice.Queue;
 Класс, реализующий очередь для хранения символов
  */
 public class Queue {
-
     char q[]; //массив для хранения элементов очереди
     int putloc, getloc; //индексы для вставки и извлечения элементов очереди
-
-
     public Queue(int size) {
         q = new char[size + 1]; //выделить память для очереди
         putloc = getloc = 0;
     }
-
     public void put(char ch) {
         if (putloc == q.length - 1) {
             System.out.println(" - Очередь заполнена");
@@ -22,7 +18,6 @@ public class Queue {
         putloc++;
         q[putloc] = ch;
     }
-
     //Извлекаем символ из очереди
     public char get() {
         if (getloc == putloc) {
