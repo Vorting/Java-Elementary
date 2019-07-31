@@ -6,14 +6,17 @@ public class Ragged {
     public static void main(String[] args) {
 
         int[][] riders = new int[7][];
-
-        riders[0] = new int[10]; // для первых пяти элементов
-        riders[1] = new int[10]; // длинна массива
-        riders[2] = new int[10]; // по второму
-        riders[3] = new int[10]; // индексу
-        riders[4] = new int[10]; // равна 10
-        riders[5] = new int[2]; //  для остальных двух элементов длина
-        riders[6] = new int[2]; //  массива по второму индексу равна 2
+        // для первых пяти элементов длинна массива
+        // по второму размеру равна 10
+        riders[0] = new int[10];
+        riders[1] = new int[10];
+        riders[2] = new int[10];
+        riders[3] = new int[10];
+        riders[4] = new int[10];
+        //  для остальных двух элементов длина
+        //  массива по второму размеру равна 2
+        riders[5] = new int[2];
+        riders[6] = new int[2];
 
         int i, j;
 
