@@ -1,7 +1,6 @@
 package com.edition5.chapter6.practice;
 
 public class Queue {
-
     private char[] q; // массив для хранения элементов очереди
     private int putLoc, getLoc; // индексы размещения и извлечения элементов очереди
 
@@ -15,7 +14,6 @@ public class Queue {
         putLoc = ob.putLoc;
         getLoc = ob.getLoc;
         q = new char[ob.q.length];
-
         //скопируем элементы в очередь
         for (int i = getLoc + 1; i <= putLoc; i++) {
             q[i] = ob.q[i];
@@ -27,15 +25,12 @@ public class Queue {
         putLoc = 0;
         getLoc = 0;
         q = new char[a.length + 1];
-
         for (int i = 0; i < a.length; i++) {
             put(a[i]);
         }
     }
 
-
     // помещаем символ в очередь
-
     void put(char ch) {
         if (putLoc == q.length - 1) {
             System.out.println(" - Queue is full.");
@@ -54,6 +49,4 @@ public class Queue {
         getLoc++;
         return q[getLoc];
     }
-
-
 }
