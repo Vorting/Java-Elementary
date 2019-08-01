@@ -5,10 +5,7 @@ package com.edition5.chapter5.practice;
 
 public class Exercise4 {
     public static void main(String[] args) {
-
         int size = 10;
-//        int[] nums = {99, -10, 100123, 18, -978,
-//                5623, 463, -9, 287, 49};
         char[] nums = new char[size];
         nums[0] ='a';
         nums[1] ='q';
@@ -21,13 +18,11 @@ public class Exercise4 {
         nums[8] ='y';
         nums[9] ='z';
         int a, b, t;
-
         System.out.print(" Original array is: \n");
         for (int i = 0; i < size; i++) {
             System.out.print(" " + nums[i]);
             System.out.println();
         }
-
         for (a = 1; a < size; a++)
             for (b = size - 1; b >= a; b--)
                 if (nums[b - 1] > nums[b]) { // если требуемый порядок
@@ -41,6 +36,5 @@ public class Exercise4 {
             System.out.print(" " + nums[i]);
         }
         System.out.println();
-
     }
 }
