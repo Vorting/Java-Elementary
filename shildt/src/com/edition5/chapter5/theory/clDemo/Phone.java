@@ -1,9 +1,7 @@
 package com.edition5.chapter5.theory.clDemo;
 
 public class Phone {
-
     public static void main(String[] args) {
-
         String numbers[][] = {
                 {"Dima", "555-3322"},
                 {"Anzhelika", "555-8976"},
@@ -12,7 +10,7 @@ public class Phone {
         };
         int i;
 
-        // Чтобы воспользоваться программой, ей нужно передать
+        //Для того чтобы воспользоваться программой, ей нужно передать
         // один аргумент коммандной строки.
         if (args.length != 1) {
             System.out.println(" Usage: java Phone <name>");
